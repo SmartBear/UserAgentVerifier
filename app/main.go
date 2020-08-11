@@ -68,7 +68,14 @@ func main() {
 			data.Agent = ua
 			ua := user_agent.New(data.Agent)
 
-			data.OS = ua.OS()
+			os := ua.OS()
+
+			if os == "Windows 8.1" {
+				data.OS = "Windows 8"
+			} else {
+				data.OS = os
+			}
+			
 			browser, version := ua.Browser()
 			data.Browser = browser
 			data.Version = version
@@ -109,5 +116,5 @@ func main() {
 		}
 	})
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":3000", router))
 }

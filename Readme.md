@@ -8,7 +8,7 @@ docker build . -t useragentverifier
 docker run -p 3000:3000 -d useragentverifier
 ```
 
-# Usage
+# Usage without Expect
 
 ## Create a User Agent grabbing session:
 
@@ -23,7 +23,7 @@ Response :
 }
 ```
 
-## Save User Agent
+## Caputure User Agent from Target Browser
 
 GET /agent/{id}
 
@@ -48,6 +48,8 @@ Response :
   "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:79.0) Gecko/20100101 Firefox/79.0"
 }
 ```
+
+# Usage with Expect
 
 ## Create Expected User Agent
 
@@ -78,6 +80,11 @@ Response :
   "result": false
 }
 ```
+
+## Capture Agent from Target as before.
+
+GET /agent/{id}
+...
 
 ## Verify Expected User Agent
 

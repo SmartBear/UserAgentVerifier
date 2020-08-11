@@ -2,8 +2,11 @@ Simple User Agent grabber written in Go.
 
 # Installation
 
+```
 docker build . -t useragentverifier
+
 docker run -p 3000:3000 -d useragentverifier
+```
 
 # Usage
 

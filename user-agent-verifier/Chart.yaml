@@ -1,0 +1,7 @@
+apiVersion: v1
+name: user-agent-verifier
+namespace: user-agent-verifier
+description: User Agent Verifier API
+type: application
+version: 1.0.0
+appVersion: 1.0.0

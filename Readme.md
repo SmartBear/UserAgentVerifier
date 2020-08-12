@@ -1,11 +1,20 @@
 Simple User Agent grabber written in Go.
 
-# Installation
+# Docker Usage
 
 ```
 docker build . -t useragentverifier
 
 docker run -p 3000:3000 -d useragentverifier
+```
+
+# Helm Deployment
+
+Edit values.yaml to set nodePort.
+
+```
+cd user-agent-verifier
+helm install . --values values.yaml
 ```
 
 # Usage without Expect

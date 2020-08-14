@@ -10,7 +10,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/patrickmn/go-cache"
 	"github.com/teris-io/shortid"
-	"github.com/mssola/user_agent"
+	"github.com/DanMHammer/user_agent"
 )
 
 type Data struct {

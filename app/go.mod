@@ -7,4 +7,5 @@ require (
 	github.com/gorilla/mux v1.7.4
 	github.com/patrickmn/go-cache v2.1.0+incompatible
 	github.com/teris-io/shortid v0.0.0-20171029131806-771a37caa5cf
+	github.com/mssola/user_agent 7759c7a
 )
